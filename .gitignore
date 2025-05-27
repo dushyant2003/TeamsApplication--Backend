@@ -1,0 +1,100 @@
+# Build results
+bin/
+obj/
+.vs/**
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+appsettings.json
+
+
+# Rider
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# Auto-generated files
+Generated_Code/
+
+# Logs
+*.log
+
+# DotNet CLI
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# DotCover
+*.dotCover
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Visual Studio for Mac
+.vscode/
+
+# Crash Reports
+*.stackdump
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# User-specific files
+*.userprefs
+
+# OS generated files
+.DS_Store
+*.swp
+*.bak
+*.tmp
+
+# NuGet
+*.nupkg
+packages/
+*.snupkg
+.nuget/
+
+# Test Results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+
+# Visual Studio Code settings folder
+.vscode/
+
+# Others
+*.dbmdl
+*.psess
+*.vsp
+*.vspscc
+*.vssscc
+*.cache
+*.pdb
+*.mdb
+
+# Local history for some IDEs
+.history/
+
+# Temporary ASP.NET files
+**/App_Data/Temp/
+
+# Build pipeline logs
+build.log
+
+# Compiled DLLs
+*.dll
+
+# Publish artifacts
+publish/
