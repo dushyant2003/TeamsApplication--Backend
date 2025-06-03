@@ -41,6 +41,7 @@ namespace TeamsApplicationServer
             builder.Services.AddSingleton<IUserIdProvider, NameUserIdProvider>();
             builder.Services.AddSingleton<IUserRepository, UserRepository>();
             builder.Services.AddSingleton<IChatRepository, ChatRepository>();
+            builder.Services.AddSingleton<IGroupRepository, GroupRepository>();
             builder.Services.AddSignalR();
 
             builder.Services.AddCors(options =>
@@ -58,7 +59,6 @@ namespace TeamsApplicationServer
 
             builder.WebHost.UseUrls("http://localhost:5197");
 
-
             var app = builder.Build();
             app.UseAuthentication();
             app.UseAuthorization();
@@ -67,23 +67,11 @@ namespace TeamsApplicationServer
             app.MapHub<ChatHub>("/chatHub");
             app.MapControllers();
 
-            //await sampleDBAsync();
-
+            
             app.Run();
 
         }
 
-        //private static async Task sampleDBAsync()
-        //{
-        //    Table _table = DynamoDbHelper.GetTable();
-        //    var item = new Document
-        //    {
-        //        ["PK"] = "Group:001",
-        //        ["SK"] = "User:004"
-
-        //    };
-        //    await _table.PutItemAsync(item);
-        //    Console.WriteLine("Item added successfully.");
-        //}
+        
     }
 }

@@ -22,6 +22,5 @@ namespace TeamsApplicationServer.Helpers
         {
             return _table;
         }
-
     }
 }
